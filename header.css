@@ -1,90 +1,76 @@
-header {
-    font-family: Arial, sans-serif;
-    border-radius: 10px 10px 0 0;
-    overflow: hidden;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+/* Remove margens externas e define a navbar como fixa, se necessário */
+body, html {
+  margin: 0;
+  padding: 0;
 }
 
+/* Estilização da barra de navegação */
 nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 20px;
-    background-color: #333;
-    padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #004b23;
+  padding: 10px 20px;
+  width: 100%;
+  box-sizing: border-box;
 }
 
-.nav-left {
-    display: flex;
-    gap: 20px;
-}
-
-.nav-right {
-    display: flex;
-}
-
+/* Estilização dos links */
 nav a {
-    text-decoration: none;
-    padding: 5px;
-    color: #f9f9f9;
-    font-weight: bold;
-    text-transform: uppercase;
+  color: white;
+  text-decoration: none;
+  padding: 10px 15px;
+  font-weight: bold;
 }
 
+/* HOVER vermelho */
 nav a:hover {
-    background-color: #006400; /* verde escuro */
-    color: white;
+  background-color: red;
+  color: white;
+  border-radius: 5px;
 }
 
-.banner {
-    background-color: #008000; /* verde IFSP */
-    padding: 15px 20px;
+/* Organização dos elementos à esquerda e direita */
+.nav-left,
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
-.banner img {
-    height: 60px;
-}
-
-.instituto-info h1 {
-    font-size: 24px;
-    margin: 0;
-}
-
-.instituto-info p {
-    margin: 5px 0;
-}
-
+/* Dropdown */
 .dropdown {
-    position: relative;
-    display: inline-block;
+  position: relative;
+  display: inline-block;
 }
 
 .dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #333;
-    min-width: 200px;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-    z-index: 1;
+  display: none;
+  position: absolute;
+  background-color: #004b23;
+  min-width: 200px;
+  z-index: 1;
+  flex-direction: column;
 }
 
 .dropdown-content a {
-    color: #f9f9f9;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-    text-transform: none;
-    font-weight: normal;
-}
-
-.dropdown-content a:hover {
-    background-color: #006400;
+  display: block;
+  padding: 10px;
+  text-align: left;
 }
 
 .dropdown:hover .dropdown-content {
-    display: block;
+  display: flex;
 }
 
-.dropdown:hover .dropbtn {
-    background-color: #006400;
+.dropbtn:hover {
+  background-color: red;
+}
+
+/* Banner */
+.banner img {
+  width: 100%;
+  display: block;
+  margin: 0;
+  padding: 0;
 }
