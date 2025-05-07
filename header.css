@@ -27,7 +27,7 @@ nav {
 }
 
 /* Estilização dos links da navegação */
-na a {
+nav a {
   color: white;
   padding: 14px 16px;
   text-decoration: none;
@@ -94,4 +94,5 @@ nav a:hover {
 .banner img {
   height: 80px;
   object-fit: contain;
+  img-align: left;
 }
