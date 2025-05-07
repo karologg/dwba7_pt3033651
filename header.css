@@ -18,7 +18,7 @@ header {
 /* Estilização da barra de navegação */
 nav {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;;
   align-items: center;
   background-color: #222; /* preto ou cinza bem escuro */
   padding: 0 20px;
@@ -88,11 +88,10 @@ nav a:hover {
 .banner {
   background-color: #007e3a; /* verde do IFSP */
   padding: 10px 0;
-  text-align: center;
+  text-align: left;
 }
 
 .banner img {
   height: 80px;
   object-fit: contain;
-  img-align: left;
 }
