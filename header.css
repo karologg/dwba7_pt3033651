@@ -41,9 +41,13 @@ nav a:hover {
 }
 
 /* Estilização das seções da navegação */
-.nav-left, .nav-right {
+.nav-left {
   display: flex;
-  align-items: center;
+  gap: 20px;
+}
+
+.nav-right {
+  display: flex;
 }
 
 /* Estilização do dropdown */
