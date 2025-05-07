@@ -8,12 +8,16 @@ section {
     padding: 20px;
 }
 
-.event-section img {
-    border-radius: 50%;
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
 
-.event-section p {
-    border: dashed;
-    width: 70%;
-    text-align: center;
+.grid-container img {
+    width: 150px;
+    height: auto;
 }
